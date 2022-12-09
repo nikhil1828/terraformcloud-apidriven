@@ -1,10 +1,10 @@
-region = "ap-southeast-1"
+region = "ap-south-1"
 
 vpc-cidr = "10.0.0.0/20"
 pub_snet_details = {
   snet-pb-1 = {
     cidr_block        = "10.0.0.0/21",
-    availability_zone = "ap-southeast-1a"
+    availability_zone = "ap-south-1a"
   }
 }
 
@@ -28,5 +28,5 @@ sg_details = {
   }
 }
 
-ami_id        = "ami-00e912d13fbb4f225"
+ami_id        = "ami-07ffb2f4d65357b42"
 instance_type = "t2.micro"
