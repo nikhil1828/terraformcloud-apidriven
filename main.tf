@@ -28,15 +28,11 @@ module "ec2" {
   source = "./module/ec2"
   ec2_sub = {
     ec2-001 = {
-      pub-snet = lookup(module.vpc.pub_snetid, "snet-pb-1", null).id
+      pub-snet = lookup(module.vpc.pub_snetid, "snet-pb-1", null)
       hostname = "server-1"
     }
   }
   sg            = [lookup(module.sg.sg_id, "ec2-sg", null)]
   ami_id        = var.ami_id
   instance_type = var.instance_type
-}
-
-output "EC2-IP" {
-  value = module.ec2.ec2-details
 }
