@@ -1,9 +1,9 @@
 region = "ap-south-1"
 
-vpc-cidr = "10.0.0.0/16"
+vpc-cidr = "11.0.0.0/18"
 pub_snet_details = {
   snet-pb-1 = {
-    cidr_block        = "10.0.0.0/20",
+    cidr_block        = "11.0.0.0/22",
     availability_zone = "ap-south-1b"
   }
 }
