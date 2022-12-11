@@ -3,7 +3,7 @@ terraform {
     organization = "nikhil-org-001"
 
     workspaces {
-      name = "api-driven-workspace-cicd-2"
+      name = "networking-test-us-east"
     }
   }
 }
