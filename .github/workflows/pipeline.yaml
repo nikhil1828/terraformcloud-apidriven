@@ -1,7 +1,9 @@
 name: Create AWS Infra
 on:
-  push:
-    branches: [master]
+  # push:
+  #   branches: [master]
+  workflow_dispatch:
+
 jobs:
   job1:
     runs-on: ubuntu-latest
